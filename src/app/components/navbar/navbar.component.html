@@ -1,0 +1,17 @@
+<nav class="menu">
+  <app-language-selector></app-language-selector>
+  <div class="menu__icon">
+    <img src="../../../assets/images/ds-logo.png" />
+  </div>
+  <div class="menu__line"></div>
+  <div class="menu__options">
+    <ul class="menu__options--tabs">
+      <li routerLink="/home" routerLinkActive="active">
+        {{ "title" | translate }}
+      </li>
+      <li routerLink="/destination" routerLinkActive="active">DESTINATION</li>
+      <li routerLink="/crew" routerLinkActive="active">CREW</li>
+      <li routerLink="/tecnology" routerLinkActive="active">TECHNOLOGY</li>
+    </ul>
+  </div>
+</nav>
