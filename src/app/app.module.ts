@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LanguageSelectorComponent } from './components/language-selector/language-selector.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -36,6 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
       defaultLanguage: 'pt',
     }),
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
