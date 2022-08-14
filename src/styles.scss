@@ -3,18 +3,30 @@
 @import url("./reset.scss");
 @import url("./theme/_variables.scss");
 
-body {
-  background-color: #000;
-  font-family: "Raleway", sans-serif;
-}
-
 * {
   font-family: "Raleway", sans-serif;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--dark-color);
+}
+
+$black: #000;
+$white: #fff;
+$darkblue: #062f4f;
+$pink: #813772;
+$red: #b82601;
+
 /* Colors */
 :root {
   --dark-color: #0b0d17;
+  --light-color: #d0d6f9;
+  --white-color: #ffffff;
+}
+
+:root .light-theme {
+  --dark-color: #96c2e3;
   --light-color: #d0d6f9;
   --white-color: #ffffff;
 }

@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { LanguageSelectorComponent } from './language-selector.component';
+import { TranslateService } from '@ngx-translate/core';
 
 describe('LanguageSelectorComponent', () => {
   let component: LanguageSelectorComponent;
@@ -11,9 +12,9 @@ describe('LanguageSelectorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LanguageSelectorComponent ]
-    })
-    .compileComponents();
+      declarations: [LanguageSelectorComponent],
+      imports: [TranslateService],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
