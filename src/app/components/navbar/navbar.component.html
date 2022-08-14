@@ -28,7 +28,8 @@
 
   <div class="navbar__theme">
     <button type="button" (click)="toggleTheme()">
-      <img src="../../../assets/images/{{ icon }}.png" />
+      <fa-icon [icon]="icon"></fa-icon>
+      <!-- <img src="../../../assets/images/{{ icon }}.png" /> -->
     </button>
   </div>
 </nav>
