@@ -1,0 +1,21 @@
+$black: #000;
+$white: #fff;
+$darkblue: #062f4f;
+$pink: #813772;
+$red: #b82601;
+
+.language-selector {
+  button {
+    cursor: pointer;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    background: transparent;
+
+    color: $black;
+
+    &:hover {
+      border-bottom: 1px solid $pink;
+    }
+  }
+}
