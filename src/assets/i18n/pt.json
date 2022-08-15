@@ -9,8 +9,11 @@
     "experience": "Experiência",
     "projects": "Projetos"
   },
-  "choose_language": "Choisissez la langue",
-  "info": "Montrer l'information",
-  "title": "Super APP géniale",
-  "welcome_text": "Bienvenue sur la super APP!"
+  "presentation": {
+    "hello": "Olá, seja bem-vinde! Sou a",
+    "title": "Débora Suzuki",
+    "subtitle": "Desenvolvedora Frontend",
+    "description": "Apaixonada por aplicações web. Dando vida a APIs e conectando usuários.",
+    "button": "Currículo"
+  }
 }

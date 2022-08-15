@@ -9,8 +9,11 @@
     "experience": "Experience",
     "projects": "Projects"
   },
-  "choose_language": "Choose language",
-  "info": "Show Info",
-  "title": "Awesome super APP!",
-  "welcome_text": "Welcome to the super APP!"
+  "presentation": {
+    "hello": "Hello welcome! I'm",
+    "title": "Débora Suzuki",
+    "subtitle": "Frontend Developer",
+    "description": "A passionate about web applications. Bringing APIs to life and connecting users.",
+    "button": "Resume"
+  }
 }
