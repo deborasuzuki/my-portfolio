@@ -1,34 +1,116 @@
 .navbar {
+  position: fixed;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
-  width: 98vw;
-  padding-left: 15px;
+  height: 70px;
+  transform: translateY(0px);
+  background-color: var(--background-navbar);
+  // box-shadow: 0 10px 30px -10px var(--navy-shadow);
+
+  width: 100%;
+  // height: 80px;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    height: 80px;
+  }
 
   &__logo {
-    width: 75px;
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: 100%;
+
+    img {
+      width: 75px;
+    }
+  }
+
+  &__right {
+    display: flex;
   }
 
   &__options {
-    width: 850px;
-    height: 96px;
+    @media (min-width: 768px) {
+      width: 500px;
+    }
 
-    // background-color: rgba(255, 255, 255, 0.04);
-    // backdrop-filter: blur(30px);
+    @media (min-width: 1000px) {
+      width: 750px;
+    }
 
-    ul {
+    &--mobileBtn {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      margin-top: 20px;
+      margin-right: 10px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      #iconMenu {
+        font-size: 30px;
+        background-color: transparent;
+        color: var(--text-primary);
+      }
+    }
+
+    &--tabs {
       width: 100%;
       height: 100%;
       margin: 0;
-      padding-left: 300px;
 
       list-style: none;
+      background-color: var(--background-navbar);
 
       display: flex;
-      justify-content: space-between;
+
+      @media (max-width: 767.9px) {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 30vh;
+
+        padding-right: 30px;
+
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+
+        animation: menuHide 1s forwards;
+        animation-timing-function: ease-in;
+      }
+
+      @keyframes menuHide {
+        0% {
+          transform: translateX(0px);
+        }
+
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+      @media (min-width: 768px) {
+        padding-left: 50px;
+        width: 500px;
+
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      @media (min-width: 1000px) {
+        padding-left: 200px;
+        width: 750px;
+      }
 
       li {
+        cursor: pointer;
         height: 100%;
 
         display: flex;
@@ -37,36 +119,55 @@
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 2.7px;
-        color: var(--white-color);
+        color: var(--text-primary);
 
-        cursor: pointer;
+        transition: color 0.5s;
 
         &:hover {
-          border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+          color: var(--secondary);
         }
       }
 
       li.active {
-        border-bottom: 3px solid var(--white-color);
+        color: var(--secondary);
+      }
+
+      &.active {
+        animation: menushow 0.5s forwards;
+        animation-timing-function: ease;
+      }
+
+      @keyframes menushow {
+        0% {
+          transform: translateX(50px);
+        }
+        100% {
+          transform: translateX(0);
+        }
       }
     }
   }
 
   &__theme {
+    @media (max-width: 767.9px) {
+      display: none;
+    }
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+
+    width: 40px;
 
     button {
       cursor: pointer;
       background-color: transparent;
       border: none;
+      padding: 0;
 
-      fa-icon {
-        width: 20px;
-        height: 20px;
+      #iconTheme {
+        font-size: 25px;
         background-color: transparent;
-        color: white;
+        color: var(--text-primary);
       }
     }
   }

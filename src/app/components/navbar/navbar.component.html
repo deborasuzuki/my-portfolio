@@ -1,5 +1,4 @@
 <nav class="navbar">
-  <app-language-selector></app-language-selector>
   <div class="navbar__logo">
     <img *ngIf="!light" id="logo" src="../../../assets/images/ds-logo.png" />
     <img
@@ -7,29 +6,38 @@
       id="logo"
       src="../../../assets/images/ds-logo-black.png"
     />
+    <app-language-selector></app-language-selector>
   </div>
 
-  <div class="navbar__options">
-    <ul class="navbar__options--tabs">
-      <li routerLink="/home" routerLinkActive="active">
-        {{ "navbar.home" | translate }}
-      </li>
-      <li routerLink="/destination" routerLinkActive="active">
-        {{ "navbar.about" | translate }}
-      </li>
-      <li routerLink="/crew" routerLinkActive="active">
-        {{ "navbar.experience" | translate }}
-      </li>
-      <li routerLink="/tecnology" routerLinkActive="active">
-        {{ "navbar.projects" | translate }}
-      </li>
-    </ul>
-  </div>
+  <div class="navbar__right">
+    <div class="navbar__options">
+      <button
+        class="navbar__options--mobileBtn"
+        type="button"
+        (click)="showMenu()"
+      >
+        <span class="material-icons" id="iconMenu">{{ menuIcon }}</span>
+      </button>
+      <ul class="navbar__options--tabs" id="mobile-menu">
+        <li [class.active]="aba == 'home'" (click)="aba = 'home'">
+          {{ "navbar.home" | translate }}
+        </li>
+        <li [class.active]="aba == 'about'" (click)="aba = 'about'">
+          {{ "navbar.about" | translate }}
+        </li>
+        <li [class.active]="aba == 'experiencie'" (click)="aba = 'experiencie'">
+          {{ "navbar.experience" | translate }}
+        </li>
+        <li [class.active]="aba == 'projects'" (click)="aba = 'projects'">
+          {{ "navbar.projects" | translate }}
+        </li>
+      </ul>
+    </div>
 
-  <div class="navbar__theme">
-    <button type="button" (click)="toggleTheme()">
-      <fa-icon [icon]="icon"></fa-icon>
-      <!-- <img src="../../../assets/images/{{ icon }}.png" /> -->
-    </button>
+    <div class="navbar__theme">
+      <button type="button" (click)="toggleTheme()">
+        <span class="material-icons" id="iconTheme">{{ themeIcon }}</span>
+      </button>
+    </div>
   </div>
 </nav>

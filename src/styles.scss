@@ -9,24 +9,71 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: var(--dark-color);
+  background-color: var(--background-primary);
 }
 
-$black: #000;
-$white: #fff;
-$darkblue: #062f4f;
-$pink: #813772;
-$red: #b82601;
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
 
 /* Colors */
+// --dark-navy: #020c1b;
+// --navy: #0a192f;
+// --light-navy: #112240;
+// --lightest-navy: #233554;
+// --navy-shadow: rgba(2, 12, 27, 0.7);
+// --dark-slate: #495670;
+// --slate: #8892b0;
+// --light-slate: #a8b2d1;
+// --lightest-slate: #ccd6f6;
+// --white: #e6f1ff;
+// --green: #64ffda;
+// --green-tint: rgba(100, 255, 218, 0.1);
+// --pink: #f57dff;
+// --blue: #57cbff;
+
 :root {
-  --dark-color: #0b0d17;
-  --light-color: #d0d6f9;
-  --white-color: #ffffff;
+  --background-primary: #0a192f;
+  --background-navbar: rgb(10, 25, 47, 0.85);
+
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+
+  --text-title: #a8b2d1;
+  --text-primary: #8892b0;
+  --primary: #062f4f;
+  --secondary: #64ffda;
+  --tertiary: #b82601;
 }
 
 :root .light-theme {
-  --dark-color: #96c2e3;
-  --light-color: #d0d6f9;
-  --white-color: #ffffff;
+  --background-primary: #fffffb;
+  --background-navbar: rgb(255, 255, 251, 0.85);
+
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+
+  --text-primary: #14161c;
+  --primary: #062f4f;
+  --secondary: #813772;
+  --tertiary: #b82601;
 }
