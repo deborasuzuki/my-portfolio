@@ -1,0 +1,32 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 30px;
+
+  bottom: 0;
+
+  &__icons {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__line {
+    margin-top: 20px;
+    height: 60px;
+    border-left: 1px solid var(--text-primary);
+  }
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--text-primary);
+
+  &:hover {
+    fill: var(--secondary);
+  }
+}

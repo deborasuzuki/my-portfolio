@@ -1,10 +1,16 @@
 <nav class="navbar">
   <div class="navbar__logo">
-    <img *ngIf="!light" id="logo" src="../../../assets/images/ds-logo.png" />
+    <img
+      *ngIf="!light"
+      id="logo"
+      src="../../../assets/images/ds-logo.png"
+      alt="Logotipo com letras D e S"
+    />
     <img
       *ngIf="light"
       id="logo"
       src="../../../assets/images/ds-logo-black.png"
+      alt="Logotipo com letras D e S"
     />
     <app-language-selector></app-language-selector>
   </div>
