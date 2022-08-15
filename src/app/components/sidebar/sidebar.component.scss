@@ -4,8 +4,13 @@
   align-items: center;
 
   width: 30px;
+  margin: 0 40px;
 
   bottom: 0;
+
+  @media (max-width: 767.9px) {
+    display: none;
+  }
 
   &__icons {
     height: 120px;

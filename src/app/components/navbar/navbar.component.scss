@@ -9,11 +9,11 @@
   // box-shadow: 0 10px 30px -10px var(--navy-shadow);
 
   width: 100%;
-  // height: 80px;
-  padding: 0 20px;
+  padding: 10px 0 0;
 
   @media (min-width: 768px) {
     height: 80px;
+    padding: 0 20px;
   }
 
   &__logo {
@@ -45,7 +45,7 @@
       cursor: pointer;
       border: none;
       background-color: transparent;
-      margin-top: 20px;
+      margin-top: 10px;
       margin-right: 10px;
 
       @media (min-width: 768px) {
@@ -84,6 +84,8 @@
 
         animation: menuHide 1s forwards;
         animation-timing-function: ease-in;
+
+        // background-color: var(--menu-background);
       }
 
       @keyframes menuHide {

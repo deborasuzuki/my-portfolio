@@ -1,3 +1,19 @@
 .home {
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    height: 100%;
+  }
+
+  app-sidebar {
+    align-self: flex-end;
+  }
+
+  main {
+    margin-top: 80px;
+  }
 }

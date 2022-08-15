@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 500px) {
+    display: none;
+  }
+
   width: 80px;
   height: 30px;
   margin: 5px;
