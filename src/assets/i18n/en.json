@@ -15,5 +15,12 @@
     "subtitle": "Frontend Developer",
     "description": "A passionate about web applications. Bringing APIs to life and connecting users.",
     "button": "Resume"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "text": "Desenvolvedora frontend!<br>Atualmente em um projeto desenvolvido com Angular e Ionic, busco oportunidade de absorver conhecimentos lógicos e desenvolver soft skills.",
+    "skills": "Habilidades",
+    "description": "Apaixonada por aplicações web. Dando vida a APIs e conectando usuários.",
+    "button": "Currículo"
   }
 }

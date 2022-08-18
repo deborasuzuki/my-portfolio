@@ -15,5 +15,14 @@
     "subtitle": "Desenvolvedora Frontend",
     "description": "Apaixonada por aplicações web. Dando vida a APIs e conectando usuários.",
     "button": "Currículo"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "first-text": "Eu sou a Débora, desenvolvedora frontend! Com experiência em projetos Angular e Ionic, busco oportunidade de absorver conhecimentos lógicos e desenvolver soft skills.",
+    "second-text": "Vivi uma transição de carreira da área de comercial de engenharia elétrica, e trago na bagagem uma vasta experiência de trabalho em equipe, gestão de tempo, conhecimento de metodologias ágeis (Scrum, kanban, etc), experiência em Excel e manipulação de dados.",
+    "third-text": "Executora nata! Movida a resultados e desafios. Organizada, metódica e verdadeira apaixonada por planilhas e listas. Dedicada, autodidata e em busca constante de novos conhecimentos. Valorizo o sucesso da equipe acima do mérito pessoal. Acredito que a melhor maneira de aprender, é ensinar.",
+    "skills": "Habilidades",
+    "description": "Apaixonada por aplicações web. Dando vida a APIs e conectando usuários.",
+    "button": "Currículo"
   }
 }
